@@ -8,17 +8,18 @@
  *
  * @author octanet
  */
-public class Etudiant implements Comparable<Etudiant>{
+
+public class Enseignant implements Comparable<Enseignant>{
     
     private int id ;
     private String nom;
     private String prenom;
     
-    public Etudiant(){
+    public Enseignant(){
         
     }
     
-    public Etudiant(int id, String nom, String prenom){
+    public Enseignant(int id, String nom, String prenom){
         
         this.id=id;
         this.nom=nom;
@@ -87,7 +88,11 @@ public class Etudiant implements Comparable<Etudiant>{
      //return o.id - this.id chtar croissent
     
     }
-    }
 
+    @Override
+    public int compareTo(Enseignant o) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    }
 
 

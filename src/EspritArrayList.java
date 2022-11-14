@@ -11,6 +11,7 @@
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 
 public class EspritArrayList implements University{
@@ -50,12 +51,17 @@ public class EspritArrayList implements University{
    
     @Override
     public void trierEtudiantsParNom() {
-        Collections.sort(listeSt, new TriParNom());
+        Collections.sort(etudiants);
     }
 
       @Override
     public void trierEtudiantsParId() {
-        Collections.sort(listeSt);
+        Collections.sort(etudiants, new Parnom());
     } 
+
+    @Override
+    public void displayEtudiants() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

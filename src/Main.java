@@ -17,6 +17,10 @@ public class Main {
     eleve2.equals(eleve3);
     }
     
+        
+    Enseignant eleve1 = new Enseignant();
+    Enseignant eleve2 = new Enseignant (3,"Yassmine","salma");
+    Enseignant eleve3 = new Enseignant(1,"mariem","ahmed");
 }
 
 
