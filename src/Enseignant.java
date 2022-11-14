@@ -8,6 +8,7 @@
  *
  * @author octanet
  */
+import java.util.Objects;
 
 public class Enseignant implements Comparable<Enseignant>{
     
@@ -62,7 +63,7 @@ public class Enseignant implements Comparable<Enseignant>{
        }*/
 
     
-     @Override
+    /* @Override
     public boolean equals(Object o) {
         if (o == null) {
             return false;
@@ -74,6 +75,24 @@ public class Enseignant implements Comparable<Enseignant>{
             }
         }
         return false;
+    }*/
+    
+     @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Enseignant other = (Enseignant) obj;
+        if (this.id != other.id) {
+            return false;
+        }
+        return true;
     }
     
     @Override
@@ -82,17 +101,12 @@ public class Enseignant implements Comparable<Enseignant>{
 }
     
     @Override
-    public int compareTo(Etudiant o) {
-     return this.id - o.id;
+    public int compareTo(Enseignant o) {
+     return this.id-o.id;
      //ki ne9lb ywli  croissent
      //return o.id - this.id chtar croissent
     
     }
-
-    @Override
-    public int compareTo(Enseignant o) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    }
+}
 
 

@@ -10,7 +10,7 @@
  */
 public class Etudiant implements Comparable<Etudiant>{
     
-    private int id ;
+    int id ;
     private String nom;
     private String prenom;
     

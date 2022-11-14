@@ -19,10 +19,7 @@ public class EspritTreeSet implements GestionEnseignant {
 
     @Override
     public void displayEnseignants() {
-        System.out.println(" pas de personne");
-        System.out.println(treeset); // aff non perso
-        System.out.println(" voila : ");
-
+  
         for (Enseignant e : treeset) {
             System.out.println(e.toString());
         }

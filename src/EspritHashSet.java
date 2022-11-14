@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class EspritHashSet implements GestionEnseignant {
 
-    Set<Enseignant> hash = new HashSet<Enseignant>();
+    HashSet<Enseignant> hash = new HashSet<Enseignant>();
 
     @Override
     public void ajouterEnseignant(Enseignant e) {
@@ -40,8 +40,7 @@ public class EspritHashSet implements GestionEnseignant {
 
     @Override
     public void displayEnseignants() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+       System.out.println(this.Enseignant) }
 
    
     
