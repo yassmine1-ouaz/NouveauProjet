@@ -101,8 +101,8 @@ public class Enseignant implements Comparable<Enseignant>{
 }
     
     @Override
-    public int compareTo(Enseignant o) {
-     return this.id-o.id;
+    public int compareTo(Enseignant e ) {
+     return this.id-e.id;
      //ki ne9lb ywli  croissent
      //return o.id - this.id chtar croissent
     

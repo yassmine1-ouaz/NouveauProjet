@@ -16,29 +16,29 @@ import java.util.List;
 
 public class EspritArrayList implements University{
     
-    ArrayList <Etudiant> listeSt ;
+    ArrayList <Etudiant> listSet ;
 
     public EspritArrayList() {
         
-        listeSt = new ArrayList();
+        listSet = new ArrayList();
     }
     
     @Override
     public void ajouterEtudiant(Etudiant eleve) {
-        listeSt.add(eleve);
+        listSet.add(eleve);
     }
 
     @Override
     public boolean rechercherEtudiant(Etudiant eleve) {
-        return(listeSt.contains(eleve));
+        return(listSet.contains(eleve));
     }
 
     @Override
     public boolean rechercherEtudiant(String nom) {
         
-        for (int i = 0; i< listeSt.size(); i++)
+        for (int i = 0; i< listSet.size(); i++)
         {
-            if ((listeSt.get(i)).getNom().equals(nom)) 
+            if ((listSet.get(i)).getNom().equals(nom)) 
             return true ;
         }
         return false; 
@@ -46,7 +46,7 @@ public class EspritArrayList implements University{
 
     @Override
     public void supprimerEtudiant(Etudiant eleve) {
-        listeSt.remove(eleve);
+        listSet.remove(eleve);
     }
    
     @Override
@@ -56,7 +56,7 @@ public class EspritArrayList implements University{
 
       @Override
     public void trierEtudiantsParId() {
-        Collections.sort(etudiants, new Parnom());
+        Collections.sort(listSet, new Prenom());
     } 
 
     @Override
